@@ -1,0 +1,10 @@
+plugins:
+  axiom_pupil_landing_enabled:
+    default: true
+    client: true
+
+  axiom_pupil_landing_pupil_groups:
+    default: ""
+    client: true
+    type: group_list
+    description: "Groups whose members are redirected to the pupil landing page."

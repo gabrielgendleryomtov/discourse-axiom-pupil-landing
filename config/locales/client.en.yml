@@ -1,0 +1,14 @@
+en:
+  js:
+    axiom_pupil_landing:
+      title: "Welcome"
+      subtitle: "Choose where to continue."
+      team:
+        title: "Go to your team"
+        description: "Open your team chat channel."
+        action: "Open team channel"
+      forum:
+        title: "Go to your forum"
+        description: "Open your class forum category."
+        action: "Open forum"
+      unavailable: "Not available right now"

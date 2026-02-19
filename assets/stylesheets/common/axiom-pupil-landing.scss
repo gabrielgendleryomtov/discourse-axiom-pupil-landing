@@ -1,0 +1,53 @@
+.axiom-pupil-landing {
+  padding-top: 2rem;
+}
+
+.axiom-pupil-landing__header {
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--primary-medium);
+    margin-bottom: 0;
+  }
+}
+
+.axiom-pupil-landing__options {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.axiom-pupil-landing__option {
+  background: var(--secondary);
+  border: 1px solid var(--primary-low);
+  border-radius: 12px;
+  padding: 1.25rem;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.axiom-pupil-landing__destination {
+  color: var(--primary-medium);
+  font-size: var(--font-down-1);
+  margin-top: 0.75rem;
+}
+
+.axiom-pupil-landing__unavailable {
+  color: var(--danger);
+  font-weight: 600;
+  margin-bottom: 0;
+}
