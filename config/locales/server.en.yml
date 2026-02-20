@@ -1,4 +1,4 @@
 en:
   site_settings:
-    axiom_pupil_landing_enabled: "Enable Axiom pupil landing page"
-    axiom_pupil_landing_pupil_groups: "Pupil groups redirected to the landing page"
+    axiom_landing_enabled: "Enable Axiom pupil landing page"
+    axiom_landing_pupil_groups: "Pupil groups redirected to the landing page"

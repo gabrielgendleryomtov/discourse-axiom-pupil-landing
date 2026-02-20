@@ -1,9 +1,9 @@
 plugins:
-  axiom_pupil_landing_enabled:
+  axiom_landing_enabled:
     default: true
     client: true
 
-  axiom_pupil_landing_pupil_groups:
+  axiom_landing_pupil_groups:
     default: ""
     client: true
     type: group_list

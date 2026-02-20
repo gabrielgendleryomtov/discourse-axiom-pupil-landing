@@ -1,8 +1,8 @@
-.axiom-pupil-landing {
+.axiom-landing {
   padding-top: 2rem;
 }
 
-.axiom-pupil-landing__header {
+.axiom-landing__header {
   margin-bottom: 2rem;
 
   h1 {
@@ -15,13 +15,13 @@
   }
 }
 
-.axiom-pupil-landing__options {
+.axiom-landing__options {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.axiom-pupil-landing__option {
+.axiom-landing__option {
   background: var(--secondary);
   border: 1px solid var(--primary-low);
   border-radius: 12px;
@@ -40,13 +40,13 @@
   }
 }
 
-.axiom-pupil-landing__destination {
+.axiom-landing__destination {
   color: var(--primary-medium);
   font-size: var(--font-down-1);
   margin-top: 0.75rem;
 }
 
-.axiom-pupil-landing__unavailable {
+.axiom-landing__unavailable {
   color: var(--danger);
   font-weight: 600;
   margin-bottom: 0;

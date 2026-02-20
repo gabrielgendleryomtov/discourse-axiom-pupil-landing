@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-module ::AxiomPupilLanding
+module ::AxiomLanding
   class LandingController < ::ApplicationController
-    requires_plugin "axiom-pupil-landing"
+    requires_plugin "axiom-landing"
 
     before_action :ensure_logged_in
     before_action :ensure_plugin_enabled
@@ -15,11 +15,11 @@ module ::AxiomPupilLanding
     private
 
     def ensure_plugin_enabled
-      raise Discourse::InvalidAccess unless ::AxiomPupilLanding.enabled?
+      raise Discourse::InvalidAccess unless ::AxiomLanding.enabled?
     end
 
     def ensure_pupil
-      raise Discourse::InvalidAccess unless ::AxiomPupilLanding.landing_pupil?(current_user)
+      raise Discourse::InvalidAccess unless ::AxiomLanding.landing_pupil?(current_user)
     end
 
     def guardian

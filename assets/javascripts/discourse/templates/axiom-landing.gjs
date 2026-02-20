@@ -1,0 +1,44 @@
+import { i18n } from "discourse-i18n";
+
+export default <template>
+  <div class="container axiom-landing">
+    <header class="axiom-landing__header">
+      <h1>{{i18n "axiom_landing.title"}}</h1>
+      <p>{{i18n "axiom_landing.subtitle"}}</p>
+    </header>
+
+    <section class="axiom-landing__options">
+      <article class="axiom-landing__option">
+        <h2>{{i18n "axiom_landing.team.title"}}</h2>
+        <p>{{i18n "axiom_landing.team.description"}}</p>
+
+        {{#if @model.team.url}}
+          <a class="btn btn-primary btn-large" href={{@model.team.url}}>
+            {{i18n "axiom_landing.team.action"}}
+          </a>
+          <p class="axiom-landing__destination">{{@model.team.name}}</p>
+        {{else}}
+          <p class="axiom-landing__unavailable">
+            {{i18n "axiom_landing.unavailable"}}
+          </p>
+        {{/if}}
+      </article>
+
+      <article class="axiom-landing__option">
+        <h2>{{i18n "axiom_landing.forum.title"}}</h2>
+        <p>{{i18n "axiom_landing.forum.description"}}</p>
+
+        {{#if @model.forum.url}}
+          <a class="btn btn-primary btn-large" href={{@model.forum.url}}>
+            {{i18n "axiom_landing.forum.action"}}
+          </a>
+          <p class="axiom-landing__destination">{{@model.forum.name}}</p>
+        {{else}}
+          <p class="axiom-landing__unavailable">
+            {{i18n "axiom_landing.unavailable"}}
+          </p>
+        {{/if}}
+      </article>
+    </section>
+  </div>
+</template>

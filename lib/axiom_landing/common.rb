@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-module ::AxiomPupilLanding
+module ::AxiomLanding
   module_function
 
   def enabled?
-    SiteSetting.axiom_pupil_landing_enabled
+    SiteSetting.axiom_landing_enabled
   end
 
   def pupil_group_ids
-    SiteSetting.axiom_pupil_landing_pupil_groups_map
+    SiteSetting.axiom_landing_pupil_groups_map
   end
 
   def pupil?(user)
